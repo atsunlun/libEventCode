@@ -1,0 +1,8 @@
+nmake /f Makefile.nmake
+
+minheap-internal.h(76) : error C2065: “UINT32_MAX”: 未声明的标识符
+打开文件：
+在该文件中添加#include <stdint.h>
+
+# 可单步调试
+CFLAGS=$(CFLAGS) /Od /W3 /wd4996 /nologo /Zi
